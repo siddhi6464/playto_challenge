@@ -13,8 +13,8 @@ def seed_data():
     Merchant.objects.all().delete()
     
     print("Seeding Merchants...")
-    m1 = Merchant.objects.create(name="Acme Corp (India)")
-    m2 = Merchant.objects.create(name="Globex Tech")
+    m1 = Merchant.objects.create(id=1, name="Acme Corp (India)")
+    m2 = Merchant.objects.create(id=2, name="Globex Tech")
     
     print("Seeding Ledger Entries for balances...")
     # Acme has 5000 USD equivalent in INR paise (e.g. 100,000 INR = 10,000,000 paise)
