@@ -47,7 +47,7 @@ function App() {
       setBankId('');
       fetchData();
     } catch (err) {
-      setError(err.response?.data?.error || 'An error occurred');
+      setError(err.response?.data?.error || err.response?.data?.detail || 'An error occurred');
     } finally {
       setLoading(false);
     }
