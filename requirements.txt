@@ -1,0 +1,9 @@
+django==5.0.4
+djangorestframework
+celery
+redis
+psycopg2-binary
+django-cors-headers
+gunicorn
+python-dotenv
+dj-database-url
